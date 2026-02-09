@@ -3,6 +3,9 @@ This is an educational repo. The exercice is to code the popular "Battleships" g
 
 Each branch represents a step toward finishing the game.
 
+You are hinted to write code in some places but you definitely **can modify any pre-existing code to your liking**  
+You are also allowed to add any number of functions.
+
 To start, checkout phase0:
 ```
 git checkout phase0
