@@ -1,11 +1,29 @@
-# About this repo
-This is an educational repo. The exercice is to code the popular "Battleships" game.
+# Phase 0
 
-Each branch represents a step toward finishing the game.
+In this step, we write helper functions. Replace the *pass* keyword in each function with the actual implementation.
 
-To start, checkout phase0:
+You must follow the docstring indication.
+
+Run the main.py script to verify correct execution and output.
+
+Expected result:
+
 ```
-git checkout phase0
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', 'B', 'B', 'B', 'B', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+```
+
+To continue, checkout phase1:
+```
+git checkout phase1
 ```
 
 # Rules
