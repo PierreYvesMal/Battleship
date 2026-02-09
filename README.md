@@ -1,29 +1,15 @@
-# Phase 0
+# Phase 1
 
-In this step, we write helper functions. Replace the *pass* keyword in each function with the actual implementation.
+Write the functions to place the boats on the grid.
+- The human is prompted for coordinates to place the boats.
+- The computer places boats randomly, but following the rules.
 
-You must follow the docstring indication.
+Run the main.py script to verify correct execution and output.  
+Verify invalid coordinates.
 
-Run the main.py script to verify correct execution and output.
-
-Expected result:
-
+To continue, checkout phase2:
 ```
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', 'B', 'B', 'B', 'B', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-```
-
-To continue, checkout phase1:
-```
-git checkout phase1
+git checkout phase2
 ```
 
 # Rules

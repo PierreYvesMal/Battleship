@@ -37,7 +37,40 @@ def add_boat(grid: list[list[str]], start: str, stop: str) -> None:
     # Hint: check the boundaries to avoid placing a boat outside the grid
     pass
 
+def human_preparation(grid: list[list[str]]) -> list[list[str]]:
+    """
+    The human is prompted to enter coordinates to place their boats.
+    The grid is marked with "B" for each cell occupied by a boat.
+    :param grid: A 2D list representing the grid
+    """
+    boats = {
+        "Carrier": 5,
+        "Battleship": 4,
+        "Cruiser": 3,
+        "Submarine": 3,
+        "Destroyer": 2
+    }
+    print("Place your boats on the grid.")
+    for boat_name, boat_length in boats.items():
+        boat_success = False # Flag to check if the boat was placed successfully
+        while not boat_success: # If the boat was not placed successfully, the whole boat placing process should be repeated
+            print(f"Placing boat: {boat_name} (length: {boat_length})")
+            start = input("Enter the starting coordinates of the boat (e.g., A1): ")
+            stop = input("Enter the ending coordinates of the boat (e.g., A3): ")
+            #TODO
+    # Hint: Check the boundaries and emptiness of the cell before placing a boat.
+    # Hint: If the boat was not placed successfully, the whole boat placing process should be started over.
+
+def computer_preparation(grid: list[list[str]]):
+    """
+    The computer randomly places boats on the grid.
+    The grid is marked with "B" for each cell occupied by a boat.
+    :param grid: A 2D list representing the grid
+    """
+    # Hint: Use the random module to generate random coordinates for the boats
+    # Hint: Check the boundaries and emptiness of the cell before placing a boat.
+    pass
+
 if __name__ == "__main__":
-    grid = create_grid(10, 10)
-    add_boat(grid, "B2", "B5")
-    print_grid(grid)
+    human_grid = create_grid(10, 10)
+    human_preparation(human_grid)
