@@ -1,15 +1,14 @@
-# Phase 1
+# Phase 2
 
-Write the functions to place the boats on the grid.
-- The human is prompted for coordinates to place the boats.
-- The computer places boats randomly, but following the rules.
+Write the functions to handle the human and computer turns.  
+This version alternate between human and computer turns indefinitely. The terminaison is implemented in the final step.
 
 Run the main.py script to verify correct execution and output.  
 Verify invalid coordinates.
 
-To continue, checkout phase2:
+To continue, checkout phase3:
 ```
-git checkout phase2
+git checkout phase3
 ```
 
 # Rules

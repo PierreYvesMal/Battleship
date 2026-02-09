@@ -71,6 +71,32 @@ def computer_preparation(grid: list[list[str]]):
     # Hint: Check the boundaries and emptiness of the cell before placing a boat.
     pass
 
+def human_turn(grid: list[list[str]]):
+    """
+    The human player is prompted to enter coordinates to attack the computer's grid.
+    SIMPLIFICATION: This version of the game does not check if the boat sunk.
+    :param grid: The computer's grid represented as a 2D list
+    """
+    # TODO: prompt the user to enter coordinates
+    # TODO: if cell contains "B", print "Hit!" and mark the cell with "X"
+    # TODO: if cell does not contain "B", print "Miss!" and stop the turn
+    #Note: no need to check if the boat sunk in this version of the game
+    pass
+
+def computer_turn(grid: list[list[str]]):
+    """
+    The computer randomly attacks the human's grid.
+    :param grid: The human's grid represented as a 2D list
+    """
+    # Hint: Use the random module to generate random coordinates for the attack
+    #Note: no need to check if the boat sunk in this version of the game
+    pass
+
 if __name__ == "__main__":
     human_grid = create_grid(10, 10)
+    computer_grid = create_grid(10, 10)
     human_preparation(human_grid)
+    computer_preparation(computer_grid)
+
+    #TODO: alternate between human_turn and computer_turn
+    #Note, the terminaison is not implemented in this version of the game, so the turns will continue indefinitely.
