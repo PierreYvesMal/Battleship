@@ -1,15 +1,12 @@
-# Phase 2
+# Phase 3
 
-Write the functions to handle the human and computer turns.  
-This version alternate between human and computer turns indefinitely. The terminaison is implemented in the final step.
+Finish the game with a terminaison condition.
 
-Run the main.py script to verify correct execution and output.  
-Verify invalid coordinates.
+You are allowed to update any existing code to check if the game has ended.
+- The easy way is to count the total number of hits.
+- The best way is to keep track of each boat individually, and detects when each of them sunk.
 
-To continue, checkout phase3:
-```
-git checkout phase3
-```
+Run the main.py script and enjoy!
 
 # Rules
 ## Elements
