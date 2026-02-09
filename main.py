@@ -26,12 +26,13 @@ def to_coordinates(text: str) -> tuple[int, int]:
     # Hint: check the int function to convert a string to an integer
     pass
 
-def add_boat(grid: list[list[str]], start: str, stop: str) -> None:
+def add_boat(grid: list[list[str]], start: str, stop: str) -> bool:
     """
     Adds a boat to the grid, specified by start and stop coordinates.
     :param grid: A 2D list representing the grid
     :param start: Starting coordinates of the boat (e.g., "A1")
     :param stop: Ending coordinates of the boat (e.g., "A3")
+    :returns: True if the boat was added successfully, False otherwise
     """
     # Hint: use the to_coordinates function
     # Hint: check the boundaries to avoid placing a boat outside the grid
