@@ -13,7 +13,6 @@ def create_grid(m: int, n: int) -> list[list[str]]:
         grid.append(line)
     return grid
 
-print(create_grid(10,10))
 def print_grid(grid: list[list[str]]) -> None:
     """
     Prints the grid to the console.
@@ -49,12 +48,16 @@ def add_boat(grid: list[list[str]], start: str, stop: str) -> bool:
 
     start_position = to_coordinates(start)
     end_position = to_coordinates(stop)
-    if not (65,1) <= start_position <= ((len(grid)+63),len(grid)) and (65,1) <= end_position <= ((len(grid)+63),len(grid)):
-        print(start_position, ((len(grid)+64),len(grid)), end_position, ((len(grid)+64),len(grid)))
+    n_cols = len(grid[0])+64
+    n_rows = len(grid)
+
+    if not (1 <= start_position[0] <= n_cols and 1 <= start_position[1] <= n_rows):
+        return False
+    elif not (1 <= end_position[0] <= n_cols and 1 <= end_position[1] <= n_rows):
         return False
     else:
-        print(start_position, ((len(grid) + 64), len(grid)), end_position, ((len(grid) + 64), len(grid)))
         return True
+
 
 if __name__ == "__main__":
     grid = create_grid(10, 10)
