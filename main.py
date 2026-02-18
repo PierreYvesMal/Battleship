@@ -11,15 +11,10 @@ def create_grid(m: int, n: int) -> list[list[str]]:
         for c in range(n):
             line.append(' ')
         grid.append(line)
-    for line in grid:
-        print(''.join(line),end='')
+    return grid
 
-create_grid(5,5)
-
+print(create_grid(10,10))
 def print_grid(grid: list[list[str]]) -> None:
-    for line in grid:
-        print(''.join(line),end='')
-
     """
     Prints the grid to the console.
     :param grid: A 2D list representing the grid
@@ -27,17 +22,19 @@ def print_grid(grid: list[list[str]]) -> None:
     ''
     # Hint: check the join method for strings and the len function for lists
     # Hint: check the end parameter of the print function to avoid printing a newline character
-    pass
+    for line in grid:
+            print(''.join(line),end='')
 
 def to_coordinates(text: str) -> tuple[int, int]:
     """
-    Converts a string coordinates to a tuple of integers.
-    :param text: A string representing the coordinates (e.g., "A1")
-    :returns: A tuple of integers representing the row and column indices
-    """
+     Converts a string coordinates to a tuple of integers.
+     :param text: A string representing the coordinates (e.g., "A1")
+     :returns: A tuple of integers representing the row and column indices
+     """
+
     # Hint: check the ord function to convert a character to its ASCII code
     # Hint: check the int function to convert a string to an integer
-    pass
+    return ord(text[0]),int(text[1])
 
 def add_boat(grid: list[list[str]], start: str, stop: str) -> bool:
     """
@@ -49,7 +46,15 @@ def add_boat(grid: list[list[str]], start: str, stop: str) -> bool:
     """
     # Hint: use the to_coordinates function
     # Hint: check the boundaries to avoid placing a boat outside the grid
-    pass
+
+    start_position = to_coordinates(start)
+    end_position = to_coordinates(stop)
+    if not (65,1) <= start_position <= ((len(grid)+63),len(grid)) and (65,1) <= end_position <= ((len(grid)+63),len(grid)):
+        print(start_position, ((len(grid)+64),len(grid)), end_position, ((len(grid)+64),len(grid)))
+        return False
+    else:
+        print(start_position, ((len(grid) + 64), len(grid)), end_position, ((len(grid) + 64), len(grid)))
+        return True
 
 if __name__ == "__main__":
     grid = create_grid(10, 10)
